@@ -15,7 +15,7 @@ interface AppState {
 
 
 export class AppComponent implements OnInit {
-  private counter: Observable<number>;
+  public counter: Observable<number>;
 
   constructor(private store: Store<AppState>){
     this.counter = store.select('counter');
